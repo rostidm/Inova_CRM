@@ -2,17 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 
-
-def registerPage(request):
-    form = UserCreationForm()
-    context = {'form': form}
-    return render(request, 'inova_app/registerPage.html', context)
-
-def loginPage(request):
-    context = {}
-    return render(request, 'inova_app/loginPage.html')
+from inova_app.models import Customer
 
 
 def homePage(request):
-    return render(request, "inova_app/homePage.html")
+    customers = Customer.objects.all()
+    context = {
+        "customers": customers
+    }
 
+    return render(request, "inova_app/homePage.html", context)

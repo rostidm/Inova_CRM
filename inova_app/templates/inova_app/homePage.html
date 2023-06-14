@@ -10,8 +10,13 @@
 <body>
     <section class="header">
         <div class="container">
-            <h1>Header Section</h1>
+            <h1>Header Sectionh1></h1>
         </div>
+        <ul>
+            {% for customer in customers %}
+            <li>{{customer}}</li>
+            {% endfor %}
+        </ul>
     </section>
 </body>
 </html>
