@@ -1,9 +1,10 @@
 from django.contrib import admin
 from django.urls import path
 
-from inova_app.views import homePage
+from inova_app.views import homePage, custumerDetail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homePage)
+    path('', homePage),
+    path('<pk>/', custumerDetail)
 ]

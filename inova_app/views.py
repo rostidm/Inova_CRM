@@ -12,3 +12,9 @@ def homePage(request):
     }
 
     return render(request, "inova_app/homePage.html", context)
+
+def custumerDetail (request, pk):
+
+    customer = Customer.objects.get(id=pk)
+
+    return HttpResponse("pl")

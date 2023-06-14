@@ -7,3 +7,6 @@
 7. Create app/templates/app
 8. Create html
 9 Render html in views
+10. Add context of customers in views
+11. Render context in html
+12. Add customer details with PK in views and add path in utl's

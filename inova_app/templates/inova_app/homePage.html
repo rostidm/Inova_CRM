@@ -12,11 +12,11 @@
         <div class="container">
             <h1>Header Sectionh1></h1>
         </div>
-        <ul>
+        <div>
             {% for customer in customers %}
-            <li>{{customer}}</li>
+            <a href="/{{customer.pk}}/">{{customer}}</a>
             {% endfor %}
-        </ul>
+        </div>
     </section>
 </body>
 </html>
