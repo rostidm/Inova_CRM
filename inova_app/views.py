@@ -13,7 +13,11 @@ def homePage(request):
 
     return render(request, "inova_app/homePage.html", context)
 
-def custumerDetail (request, pk):
+def programePage(request):
+
+    return render(request)
+# !!!!!!!!!!!!!!!!!!!!!
+def customerDetail (request, pk):
 
     customer = Customer.objects.get(id=pk)
 
