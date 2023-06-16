@@ -10,12 +10,8 @@
 <body>
     <section class="header">
         <div class="container">
-            <h1>Header Section</h1>
-        </div>
-        <div>
-            {% for customer in customers %}
-            <a href="/{{customer.pk}}/">{{customer.second_name}}</a>
-            {% endfor %}
+          <h1>{{ customer.first_name }} {{customer.second_name}}</h1>
+            <p></p>
         </div>
     </section>
 </body>

@@ -20,5 +20,8 @@ def programePage(request):
 def customerDetail (request, pk):
 
     customer = Customer.objects.get(id=pk)
+    context = {
+        "customer": customer
+    }
 
-    return HttpResponse("pl")
+    return render(request, "inova_app/customerDetails.html", context)

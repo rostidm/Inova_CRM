@@ -6,5 +6,5 @@ from inova_app.views import homePage, customerDetail
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homePage),
-    path('<pk>/', customerDetail)
+    path('<int:pk>/', customerDetail)
 ]
