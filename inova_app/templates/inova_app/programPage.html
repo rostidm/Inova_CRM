@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Programs</title>
+</head>
+<body>
+    <ul>
+
+        {% for program in programs %}
+
+        <li><a href="./{{program.pk}}/">{{program}}</a> {{program.description}}</li>
+
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -8,6 +8,7 @@ PROGRAMS = (
 
 
 class Customer(models.Model):
+    image = models.ImageField(upload_to='photos/', blank=True, null=True)
     first_name = models.CharField(max_length=20)
     second_name = models.CharField(max_length=20)
     age = models.IntegerField(default=0)
